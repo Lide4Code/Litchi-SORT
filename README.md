@@ -43,8 +43,8 @@ GIF preview:
 ### 1. Clone the repository
 
 ```bash
-git clone <your-github-repo-url>
-cd litchi_yolo_v2
+git clone https://github.com/Lide4Code/Litchi-SORT.git
+cd Litchi-SORT
 ```
 
 ### 2. Create a Python environment
