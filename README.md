@@ -15,10 +15,6 @@ Compared with the BoT-SORT baseline, Litchi-SORT improves robustness through:
 - A multi-model motion filtering and trajectory smoothing strategy for improved prediction
 - EIoU-based data association for dense-object scenarios
 
-## Abstract
-
-Real-time multi-object tracking in large-scale Unmanned Aerial Vehicle (UAV) video streams is a computationally intensive task, where algorithm performance is critical. State-of-the-art trackers like BoT-SORT suffer from performance degradation, including frequent track fragmentation and identity switches (IDSW), when faced with dense clustering, severe occlusion, drastic scale variations, and motion blur. These challenges severely compromise the accuracy of subsequent analysis, such as object counting. To address these performance bottlenecks, we propose Litchi-SORT, a robust tracking and counting algorithm tailored for complex UAV-based monitoring. Litchi-SORT enhances the BoT-SORT computational framework through four key algorithmic innovations: 1) a novel region-based counting method with a frame threshold to mitigate transient tracking errors; 2) a Kalman Filter with Dynamic Adaptive Noise Covariance for improved state estimation under motion noise; 3) a multi-model motion filtering and trajectory smoothness strategy for more accurate prediction; and 4) replacing the standard IoU metric with EIoU for superior data association in dense object scenarios. Validated on a challenging custom UAV dataset comprising 20 videos at 60 FPS, Litchi-SORT significantly outperforms the BoT-SORT baseline by improving Multi-Object Tracking Accuracy (MOTA) from 75.28 to 77.26, reducing average IDSW from 114.1 to 85.1, and achieving a robust counting accuracy of 91.05%. This work contributes an advanced and efficient algorithm for processing demanding aerial data, demonstrating improved performance and reliability for systems requiring high-accuracy object tracking.
-
 ## Demo
 
 ### Detection Result
@@ -30,8 +26,6 @@ Real-time multi-object tracking in large-scale Unmanned Aerial Vehicle (UAV) vid
 Click the GIF preview below to open the full demo video:
 
 [![Tracking Demo GIF](image/litchi9_preview.gif)](video/litchi9_result.mp4)
-
-- [Download / Open the full MP4 demo](video/litchi9_result.mp4)
 
 ## Performance Comparison
 
@@ -123,13 +117,6 @@ python detect.py \
 - Released now: code and pretrained weights
 - Coming next: dataset and annotations will be released progressively
 
-## Citation
-
-If this repository is useful for your research, please cite our work. A formal BibTeX entry will be added after publication.
-
-```text
-Litchi-SORT: Overcoming Occlusion and Motion Instability for Accurate Low-Altitude UAV-Based Litchi Tracking and Counting
-```
 
 ## License
 
