@@ -1,0 +1,10 @@
+# ninja log v5
+0	12036	1728714003514307114	/home/scau3090/xhp/ultralytics-main/ultralytics/nn/extra_modules/selective_scan/build/temp.linux-x86_64-cpython-39/csrc/selective_scan/cus/selective_scan_core_fwd.o	2c8d357fc33bd5f3
+0	15999	1728714007478052168	/home/scau3090/xhp/ultralytics-main/ultralytics/nn/extra_modules/selective_scan/build/temp.linux-x86_64-cpython-39/csrc/selective_scan/cus/selective_scan.o	1b78d28dfa132572
+0	39434	1728714030908528472	/home/scau3090/xhp/ultralytics-main/ultralytics/nn/extra_modules/selective_scan/build/temp.linux-x86_64-cpython-39/csrc/selective_scan/cus/selective_scan_core_bwd.o	db914900d2816f8b
+0	11586	1728714042919736869	/home/scau3090/xhp/ultralytics-main/ultralytics/nn/extra_modules/selective_scan/build/temp.linux-x86_64-cpython-39/csrc/selective_scan/cusndstate/selective_scan_core_fwd.o	dbc71b64e171e02f
+1	15317	1728714046651489545	/home/scau3090/xhp/ultralytics-main/ultralytics/nn/extra_modules/selective_scan/build/temp.linux-x86_64-cpython-39/csrc/selective_scan/cusndstate/selective_scan_ndstate.o	7128db0c78ebae1d
+0	38565	1728714069885935743	/home/scau3090/xhp/ultralytics-main/ultralytics/nn/extra_modules/selective_scan/build/temp.linux-x86_64-cpython-39/csrc/selective_scan/cusndstate/selective_scan_core_bwd.o	5307df01d4c276ed
+0	15695	1728714085996844967	/home/scau3090/xhp/ultralytics-main/ultralytics/nn/extra_modules/selective_scan/build/temp.linux-x86_64-cpython-39/csrc/selective_scan/cusoflex/selective_scan_oflex.o	2bbd9af11bed5894
+0	18423	1728714088720659527	/home/scau3090/xhp/ultralytics-main/ultralytics/nn/extra_modules/selective_scan/build/temp.linux-x86_64-cpython-39/csrc/selective_scan/cusoflex/selective_scan_core_fwd.o	94e6f03d6f3431c5
+0	60960	1728714131249728721	/home/scau3090/xhp/ultralytics-main/ultralytics/nn/extra_modules/selective_scan/build/temp.linux-x86_64-cpython-39/csrc/selective_scan/cusoflex/selective_scan_core_bwd.o	bdf50e141379d45c
