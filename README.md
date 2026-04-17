@@ -23,7 +23,7 @@ Compared with the BoT-SORT baseline, Litchi-SORT improves robustness through:
 
 ### Tracking Result
 
-Click the GIF preview below to open the full demo video:
+GIF preview:
 
 [![Tracking Demo GIF](image/litchi9_preview.gif)](video/litchi9_result.mp4)
 
