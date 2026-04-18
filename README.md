@@ -43,7 +43,7 @@ GIF preview:
 ### 1️⃣ Clone the repository
 
 ```bash
-git clone [https://github.com/Lide4Code/Litchi-SORT.git](https://github.com/Lide4Code/Litchi-SORT.git)
+git clone https://github.com/Lide4Code/Litchi-SORT.git
 cd Litchi-SORT
 ```
 
