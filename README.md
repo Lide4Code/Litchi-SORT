@@ -2,7 +2,7 @@
 
 Official implementation of **Litchi-SORT: Overcoming Occlusion and Motion Instability for Accurate Low-Altitude UAV-Based Litchi Tracking and Counting**.
 
-This repository releases the **code** and **pretrained weights** for our litchi detection, tracking, and counting pipeline. The paper is currently under review. The dataset will be released progressively.
+This repository provides the **source code** and **pretrained weights** for our litchi detection, tracking, and counting pipeline. The manuscript is currently under review. The **static image** dataset has been made publicly available via Zenodo. The continuous **UAV video dataset** and corresponding tracking annotations will be released progressively upon publication.
 
 ## Overview
 
@@ -112,10 +112,16 @@ python detect.py \
 - `image/`: demo images for README and testing
 - `video/`: demo videos and tracking results
 
-## Open-Source Plan
+## 🚀 Open-Source Plan
 
-- Released now: code and pretrained weights
-- Coming next: dataset and annotations will be released progressively
+- ✅ **Phase 1 (Available Now)**
+  - 💻 Source code for the Litchi-SORT pipeline
+  - 📦 Pretrained model weights
+  - 🖼️ Static image dataset (Hosted on Zenodo: [10.5281/zenodo.19364014](https://doi.org/10.5281/zenodo.19364014))
+
+- ⏳ **Phase 2 (Coming Soon)**
+  - 🎥 Complete low-altitude UAV video dataset
+  - 📝 Continuous multi-object tracking annotations
 
 
 ## License
