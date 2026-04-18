@@ -1,33 +1,33 @@
-# Litchi-SORT
+# 🚁 Litchi-SORT
 
 Official implementation of **Litchi-SORT: Overcoming Occlusion and Motion Instability for Accurate Low-Altitude UAV-Based Litchi Tracking and Counting**.
 
 This repository provides the **source code** and **pretrained weights** for our litchi detection, tracking, and counting pipeline. The manuscript is currently under review. The **static image** dataset has been made publicly available via Zenodo. The continuous **UAV video dataset** and corresponding tracking annotations will be released progressively upon publication.
 
-## Overview
+## 💡 Overview
 
 Real-time multi-object tracking in large-scale UAV video streams is challenging due to dense clustering, severe occlusion, drastic scale variation, and motion blur. To address these issues, we propose **Litchi-SORT**, a robust tracking and counting framework tailored for low-altitude UAV-based litchi monitoring.
 
 Compared with the BoT-SORT baseline, Litchi-SORT improves robustness through:
 
-- A region-based counting method with a frame threshold to suppress transient tracking errors
-- A Kalman Filter with Dynamic Adaptive Noise Covariance for more stable state estimation
-- A multi-model motion filtering and trajectory smoothing strategy for improved prediction
-- EIoU-based data association for dense-object scenarios
+- 🎯 A region-based counting method with a frame threshold to suppress transient tracking errors
+- 🧠 A Kalman Filter with Dynamic Adaptive Noise Covariance for more stable state estimation
+- 🔄 A multi-model motion filtering and trajectory smoothing strategy for improved prediction
+- 📏 EIoU-based data association for dense-object scenarios
 
-## Demo
+## 👀 Demo
 
-### Tracking Result
+### 🎥 Tracking Result
 
 GIF preview:
 
 [![Tracking Demo GIF](image/litchi9_preview.gif)](video/litchi9_result.mp4)
 
-### Detection Result
+### 📸 Detection Result
 
 ![Detection Result](image/test_result.jpg)
 
-## Performance Comparison
+## 📈 Performance Comparison
 
 | Method | MOTA (%) ↑ | IDF1 (%) ↑ | HOTA (%) ↑ | IDSW ↓ | TF ↓ |
 | --- | ---: | ---: | ---: | ---: | ---: |
@@ -38,39 +38,38 @@ GIF preview:
 | BoT-SORT | 75.28 | 87.52 | 81.40 | 114.1 | 82.5 |
 | **Litchi-SORT** | **77.26** | **89.09** | **83.57** | **85.1** | **81.2** |
 
-## Installation
+## ⚙️ Installation
 
-### 1. Clone the repository
+### 1️⃣ Clone the repository
 
 ```bash
-git clone https://github.com/Lide4Code/Litchi-SORT.git
+git clone [https://github.com/Lide4Code/Litchi-SORT.git](https://github.com/Lide4Code/Litchi-SORT.git)
 cd Litchi-SORT
 ```
 
-### 2. Create a Python environment
+### 2️⃣ Create a Python environment
 
 ```bash
 conda create -n litchi-sort python=3.10 -y
 conda activate litchi-sort
 ```
 
-### 3. Install dependencies
+### 3️⃣ Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Notes:
-
+📌 **Notes:**
 - A CUDA-capable GPU is strongly recommended for tracking on UAV videos
 - Released model files are provided under `models/`
 - `track.py` will first try `runs/train/model/weights/best.pt`, and automatically fall back to `models/yolov11-litchi.pt`
 
-## Quick Start
+## ⚡ Quick Start
 
 The easiest way to reproduce the tracking result is to run `track.py`.
 
-### Run tracking and counting
+### 🏃 Run tracking and counting
 
 ```bash
 python track.py \
@@ -82,20 +81,18 @@ python track.py \
 ```
 
 This command will generate:
+- 🎬 **A tracking video:** `runs/track/litchi9_demo/litchi9_result.mp4`
+- 📄 **A tracking result text file:** `runs/track/litchi9_demo/litchi9.txt`
 
-- A tracking video: `runs/track/litchi9_demo/litchi9_result.mp4`
-- A tracking result text file: `runs/track/litchi9_demo/litchi9.txt`
-
-### Output arguments
+### 🎛️ Output arguments
 
 `track.py` supports several useful options for export:
-
 - `--save-scale`: downscale the saved video to reduce file size
 - `--save-fps`: change the saved video FPS, default is to follow the source video
 - `--blur-kernel`: lightly blur the saved video to reduce bitrate and make playback smoother
 - `--codec`: choose output codec, such as `auto`, `avc1`, `H264`, or `mp4v`
 
-### Optional image detection example
+### 🔍 Optional image detection example
 
 ```bash
 python detect.py \
@@ -104,15 +101,15 @@ python detect.py \
   --folder demo
 ```
 
-## Repository Structure
+## 🗂️ Repository Structure
 
-- `track.py`: main litchi tracking and counting entry point
-- `detect.py`: image detection demo
-- `models/`: released model files in `.pt`, `.onnx`, and `.engine` formats
-- `image/`: demo images for README and testing
-- `video/`: demo videos and tracking results
+- 📜 `track.py`: main litchi tracking and counting entry point
+- 📜 `detect.py`: image detection demo
+- 📂 `models/`: released model files in `.pt`, `.onnx`, and `.engine` formats
+- 📂 `image/`: demo images for README and testing
+- 📂 `video/`: demo videos and tracking results
 
-## 🚀 Open-Source Plan
+## 🗺️ Open-Source Plan
 
 - ✅ **Phase 1 (Available Now)**
   - 💻 Source code for the Litchi-SORT pipeline
@@ -123,7 +120,6 @@ python detect.py \
   - 🎥 Complete low-altitude UAV video dataset
   - 📝 Continuous multi-object tracking annotations
 
-
-## License
+## ⚖️ License
 
 This repository is released under the license provided in [LICENSE](LICENSE).
